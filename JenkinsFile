@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+
+    stages 
+    {
+        stage('Hello') 
+        {
+            steps 
+            {
+                echo 'Hello World'
+            }
+        }
+        stage('Build') 
+        {
+            steps 
+            {
+                echo 'Building Code'
+            }
+        }
+        stage('Deploy') 
+        {
+            steps 
+            {
+                echo 'Deploying Code'
+            }
+        }
+        stage('Test') 
+        {
+            steps 
+            {
+                echo 'Testing Code'
+            }
+        }
+        stage('Release') 
+        {
+            steps 
+            {
+                echo 'Releasing Code'
+            }
+        }
+    }
+}
